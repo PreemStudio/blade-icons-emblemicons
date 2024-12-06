@@ -1,0 +1,66 @@
+{
+    "name": "basecodeoy/blade-icons-emblemicons",
+    "description": "A package to easily make use of Emblemicons with Laravel Blade Icons.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "BaseCode Oy",
+        "laravel",
+        "blade",
+        "blade-icons",
+        "blade-icons-emblemicons",
+        "emblemicons"
+    ],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/basecodeoy/blade-icons-emblemicons",
+    "support": {
+        "issues": "https://github.com/basecodeoy/blade-icons-emblemicons/issues",
+        "source": "https://github.com/basecodeoy/blade-icons-emblemicons",
+        "security": "https://github.com/basecodeoy/blade-icons-emblemicons/blob/main/.github/SECURITY.md"
+    },
+    "require": {
+        "php": "^8.3",
+        "basecodeoy/blade-icons": "^1.0.0",
+        "basecodeoy/crate": "^1.0",
+        "illuminate/contracts": "^11.0"
+    },
+    "require-dev": {
+        "basecodeoy/standards": "^1.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BaseCodeOy\\BladeIcons\\Emblemicons\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "infection/extension-installer": true,
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        },
+        "audit": {
+            "abandoned": "report"
+        },
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BaseCodeOy\\BladeIcons\\Emblemicons\\ServiceProvider"
+            ]
+        }
+    }
+}
